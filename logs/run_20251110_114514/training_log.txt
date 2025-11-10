@@ -1,0 +1,39 @@
+SegFormer Image Classification Training Log
+Start Time: 2025-11-10T11:45:14.511228
+Dataset: D:/Inteview/Dataset
+Epochs: 25, Batch Size: 32, Learning Rate: 5e-05, Num Workers: 4
+================================================================================
+Train samples: 5778
+Val   samples: 826
+Test  samples: 1656
+--------------------------------------------------------------------------------
+2025-11-10T11:49:16.388578 - Epoch [1/25] | Train Loss: 1.3006 | Val Acc: 0.5593 | Duration: 239.0s
+2025-11-10T11:53:03.006615 - Epoch [2/25] | Train Loss: 0.9553 | Val Acc: 0.6259 | Duration: 226.6s
+2025-11-10T11:56:47.450147 - Epoch [3/25] | Train Loss: 0.8076 | Val Acc: 0.6308 | Duration: 224.4s
+2025-11-10T12:00:32.945592 - Epoch [4/25] | Train Loss: 0.7322 | Val Acc: 0.6538 | Duration: 225.5s
+2025-11-10T12:04:17.076220 - Epoch [5/25] | Train Loss: 0.6748 | Val Acc: 0.6247 | Duration: 224.1s
+2025-11-10T12:07:58.157115 - Epoch [6/25] | Train Loss: 0.6317 | Val Acc: 0.5981 | Duration: 221.1s
+2025-11-10T12:11:37.112669 - Epoch [7/25] | Train Loss: 0.5757 | Val Acc: 0.6513 | Duration: 219.0s
+2025-11-10T12:15:19.009042 - Epoch [8/25] | Train Loss: 0.5035 | Val Acc: 0.6489 | Duration: 221.9s
+2025-11-10T12:19:02.635368 - Epoch [9/25] | Train Loss: 0.4642 | Val Acc: 0.6538 | Duration: 223.6s
+2025-11-10T12:22:44.439234 - Epoch [10/25] | Train Loss: 0.3984 | Val Acc: 0.6404 | Duration: 221.8s
+2025-11-10T12:26:33.876508 - Epoch [11/25] | Train Loss: 0.3608 | Val Acc: 0.6489 | Duration: 229.4s
+2025-11-10T12:30:13.320825 - Epoch [12/25] | Train Loss: 0.3074 | Val Acc: 0.6465 | Duration: 219.4s
+2025-11-10T12:33:57.657704 - Epoch [13/25] | Train Loss: 0.2799 | Val Acc: 0.6465 | Duration: 224.3s
+2025-11-10T12:37:42.710137 - Epoch [14/25] | Train Loss: 0.2773 | Val Acc: 0.5969 | Duration: 225.1s
+2025-11-10T12:41:25.232621 - Epoch [15/25] | Train Loss: 0.2373 | Val Acc: 0.6211 | Duration: 222.5s
+2025-11-10T12:45:07.949454 - Epoch [16/25] | Train Loss: 0.2161 | Val Acc: 0.6477 | Duration: 222.7s
+2025-11-10T12:48:49.432277 - Epoch [17/25] | Train Loss: 0.2026 | Val Acc: 0.6356 | Duration: 221.5s
+2025-11-10T12:52:31.362359 - Epoch [18/25] | Train Loss: 0.1784 | Val Acc: 0.6247 | Duration: 221.9s
+2025-11-10T12:56:13.320719 - Epoch [19/25] | Train Loss: 0.1740 | Val Acc: 0.6501 | Duration: 222.0s
+2025-11-10T12:59:53.870216 - Epoch [20/25] | Train Loss: 0.1637 | Val Acc: 0.6646 | Duration: 220.5s
+2025-11-10T13:03:33.898468 - Epoch [21/25] | Train Loss: 0.1495 | Val Acc: 0.6441 | Duration: 220.0s
+2025-11-10T13:07:23.191979 - Epoch [22/25] | Train Loss: 0.1572 | Val Acc: 0.6320 | Duration: 229.3s
+2025-11-10T13:11:08.932583 - Epoch [23/25] | Train Loss: 0.1543 | Val Acc: 0.6501 | Duration: 225.7s
+2025-11-10T13:14:54.622720 - Epoch [24/25] | Train Loss: 0.1467 | Val Acc: 0.6465 | Duration: 225.7s
+2025-11-10T13:18:38.437581 - Epoch [25/25] | Train Loss: 0.1301 | Val Acc: 0.6211 | Duration: 223.8s
+================================================================================
+2025-11-10T13:19:39.276448 - Final Test Accuracy: 0.6443
+Model saved as logs\run_20251110_114514\segformer_classification2.pth
+End Time: 2025-11-10T13:19:39.345991
+================================================================================

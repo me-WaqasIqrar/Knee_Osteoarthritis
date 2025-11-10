@@ -1,0 +1,7 @@
+Inference run results
+Timestamp: 2025-11-10T14:40:17.236754
+Model path: D:\Inteview\logs\run_20251110_114514\segformer_classification2.pth
+Dataset (test folder): D:\Inteview\Dataset\test
+Num samples: 1656
+Accuracy: 0.644324
+F1_macro: 0.666192

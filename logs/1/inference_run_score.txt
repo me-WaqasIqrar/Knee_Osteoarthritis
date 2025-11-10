@@ -1,0 +1,7 @@
+Inference run results
+Timestamp: 2025-11-10T16:32:13.474795
+Model path: D:\Inteview\logs\1\best_model.pth
+Dataset (test folder): D:\Inteview\Dataset\test
+Num samples: 1656
+Accuracy: 0.694444
+F1_macro: 0.659907

@@ -1,0 +1,41 @@
+SegFormer Image Classification Training Log
+Start Time: 2025-11-10T14:46:26.290403
+Dataset: D:/Inteview/Dataset
+Epochs: 25, Batch Size: 32, Learning Rate: 5e-05, Num Workers: 4
+============================================================================================================================================
+Timestamp, Epoch, Train Loss, Val Acc, Val F1_macro, Best Val Acc, Best Epoch, Duration_s
+============================================================================================================================================
+Train samples: 5778
+Val   samples: 826
+Test  samples: 1656
+--------------------------------------------------------------------------------------------------------------------------------------------
+Epoch [1/25] | Train Loss: 1.2924 | Val Acc: 0.5823 | Val F1: 0.4130 | Best Val: 0.5823 (epoch 1) | Duration: 237.3s  <-- improved
+Epoch [2/25] | Train Loss: 0.9369 | Val Acc: 0.6223 | Val F1: 0.5274 | Best Val: 0.6223 (epoch 2) | Duration: 227.5s  <-- improved
+Epoch [3/25] | Train Loss: 0.8064 | Val Acc: 0.6090 | Val F1: 0.6229 | Best Val: 0.6223 (epoch 2) | Duration: 227.7s
+Epoch [4/25] | Train Loss: 0.7318 | Val Acc: 0.6441 | Val F1: 0.6658 | Best Val: 0.6441 (epoch 4) | Duration: 235.1s  <-- improved
+Epoch [5/25] | Train Loss: 0.6672 | Val Acc: 0.6538 | Val F1: 0.6597 | Best Val: 0.6538 (epoch 5) | Duration: 230.9s  <-- improved
+Epoch [6/25] | Train Loss: 0.6175 | Val Acc: 0.6889 | Val F1: 0.6591 | Best Val: 0.6889 (epoch 6) | Duration: 231.1s  <-- improved
+Epoch [7/25] | Train Loss: 0.5551 | Val Acc: 0.6622 | Val F1: 0.6540 | Best Val: 0.6889 (epoch 6) | Duration: 229.3s
+Epoch [8/25] | Train Loss: 0.5150 | Val Acc: 0.6622 | Val F1: 0.6489 | Best Val: 0.6889 (epoch 6) | Duration: 232.7s
+Epoch [9/25] | Train Loss: 0.4557 | Val Acc: 0.6344 | Val F1: 0.6564 | Best Val: 0.6889 (epoch 6) | Duration: 233.2s
+Epoch [10/25] | Train Loss: 0.4056 | Val Acc: 0.6429 | Val F1: 0.6787 | Best Val: 0.6889 (epoch 6) | Duration: 230.7s
+Epoch [11/25] | Train Loss: 0.3706 | Val Acc: 0.6538 | Val F1: 0.6842 | Best Val: 0.6889 (epoch 6) | Duration: 231.3s
+Epoch [12/25] | Train Loss: 0.3102 | Val Acc: 0.6489 | Val F1: 0.6633 | Best Val: 0.6889 (epoch 6) | Duration: 229.4s
+Epoch [13/25] | Train Loss: 0.2898 | Val Acc: 0.6392 | Val F1: 0.6462 | Best Val: 0.6889 (epoch 6) | Duration: 233.1s
+Epoch [14/25] | Train Loss: 0.2420 | Val Acc: 0.6368 | Val F1: 0.6524 | Best Val: 0.6889 (epoch 6) | Duration: 238.8s
+Epoch [15/25] | Train Loss: 0.2386 | Val Acc: 0.6199 | Val F1: 0.6502 | Best Val: 0.6889 (epoch 6) | Duration: 242.7s
+Epoch [16/25] | Train Loss: 0.1935 | Val Acc: 0.6380 | Val F1: 0.6596 | Best Val: 0.6889 (epoch 6) | Duration: 236.9s
+Epoch [17/25] | Train Loss: 0.1794 | Val Acc: 0.6404 | Val F1: 0.6592 | Best Val: 0.6889 (epoch 6) | Duration: 242.9s
+Epoch [18/25] | Train Loss: 0.1791 | Val Acc: 0.6392 | Val F1: 0.6733 | Best Val: 0.6889 (epoch 6) | Duration: 241.3s
+Epoch [19/25] | Train Loss: 0.1608 | Val Acc: 0.6489 | Val F1: 0.6739 | Best Val: 0.6889 (epoch 6) | Duration: 237.8s
+Epoch [20/25] | Train Loss: 0.1569 | Val Acc: 0.6404 | Val F1: 0.6689 | Best Val: 0.6889 (epoch 6) | Duration: 237.3s
+Epoch [21/25] | Train Loss: 0.1616 | Val Acc: 0.6259 | Val F1: 0.6552 | Best Val: 0.6889 (epoch 6) | Duration: 230.4s
+Epoch [22/25] | Train Loss: 0.1418 | Val Acc: 0.6090 | Val F1: 0.6468 | Best Val: 0.6889 (epoch 6) | Duration: 236.2s
+Epoch [23/25] | Train Loss: 0.1710 | Val Acc: 0.6332 | Val F1: 0.6520 | Best Val: 0.6889 (epoch 6) | Duration: 231.3s
+Epoch [24/25] | Train Loss: 0.1379 | Val Acc: 0.6320 | Val F1: 0.6510 | Best Val: 0.6889 (epoch 6) | Duration: 232.7s
+Epoch [25/25] | Train Loss: 0.1244 | Val Acc: 0.6308 | Val F1: 0.6645 | Best Val: 0.6889 (epoch 6) | Duration: 229.8s
+============================================================================================================================================
+2025-11-10T16:25:07.084537 - Final Test Accuracy: 0.6624, Test F1_macro: 0.6760
+Final model saved as logs\1\final_model.pth
+End Time: 2025-11-10T16:25:07.255785
+============================================================================================================================================
