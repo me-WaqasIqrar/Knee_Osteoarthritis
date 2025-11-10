@@ -139,7 +139,7 @@ def evaluate(model, dataloader, device):
     return acc, f1
 
 
-def main(data_root=r"D:/Inteview/Dataset", num_epochs=25, batch_size=32, lr=5e-5, num_workers=4, exp_no="2"):
+def main(data_root=r"D:/Knee_Osteoarthritis/Dataset", num_epochs=25, batch_size=4, lr=5e-5, num_workers=4, exp_no="2"):
     
     import numpy as np
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
