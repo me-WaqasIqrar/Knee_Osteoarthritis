@@ -151,9 +151,9 @@ def infer_examples(model, dataset, device, n_samples=10):
 
 def main():
     # === MODIFY THESE PATHS AND SETTINGS ===
-    data_root = r"D:/Inteview/Dataset"          # dataset root (contains train/val/test)
-    model_path = r"logs/1/best_model.pth"  # path to saved model
-    backbone = "nvidia/mit-b0"
+    data_root = r"D:/Knee_Osteoarthritis/Dataset"      # dataset root (contains train/val/test)
+    model_path = r"logs/2/best_model.pth"  # path to saved model
+    backbone = "nvidia/mit-b5"
     num_labels = 5
     batch_size = 16
     num_workers = 4
