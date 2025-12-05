@@ -1,0 +1,41 @@
+SegFormer Image Classification Training Log
+Start Time: 2025-12-04T18:09:30.159557
+Dataset: Dataset/
+Epochs: 25, Batch Size: 4, Learning Rate: 5e-05, Num Workers: 4
+============================================================================================================================================
+Timestamp, Epoch, Train Loss, Val Acc, Val F1_macro, Best Val Acc, Best Epoch, Duration_s
+============================================================================================================================================
+Train samples: 5778
+Val   samples: 826
+Test  samples: 1656
+--------------------------------------------------------------------------------------------------------------------------------------------
+Epoch [1/25] | Train Loss: 1.4192 | Val Acc: 0.3971 | Val F1: 0.1137 | Best Val: 0.3971 (epoch 1) | Duration: 235.1s  <-- improved
+Epoch [2/25] | Train Loss: 1.3529 | Val Acc: 0.5085 | Val F1: 0.3953 | Best Val: 0.5085 (epoch 2) | Duration: 229.3s  <-- improved
+Epoch [3/25] | Train Loss: 0.9553 | Val Acc: 0.6416 | Val F1: 0.5655 | Best Val: 0.6416 (epoch 3) | Duration: 233.1s  <-- improved
+Epoch [4/25] | Train Loss: 0.8124 | Val Acc: 0.6404 | Val F1: 0.6154 | Best Val: 0.6416 (epoch 3) | Duration: 230.0s
+Epoch [5/25] | Train Loss: 0.7374 | Val Acc: 0.6562 | Val F1: 0.6359 | Best Val: 0.6562 (epoch 5) | Duration: 231.4s  <-- improved
+Epoch [6/25] | Train Loss: 0.6683 | Val Acc: 0.6671 | Val F1: 0.6764 | Best Val: 0.6671 (epoch 6) | Duration: 230.1s  <-- improved
+Epoch [7/25] | Train Loss: 0.6186 | Val Acc: 0.6598 | Val F1: 0.6494 | Best Val: 0.6671 (epoch 6) | Duration: 231.5s
+Epoch [8/25] | Train Loss: 0.5494 | Val Acc: 0.6610 | Val F1: 0.6580 | Best Val: 0.6671 (epoch 6) | Duration: 233.5s
+Epoch [9/25] | Train Loss: 0.4766 | Val Acc: 0.6634 | Val F1: 0.6759 | Best Val: 0.6671 (epoch 6) | Duration: 235.0s
+Epoch [10/25] | Train Loss: 0.4104 | Val Acc: 0.6622 | Val F1: 0.6808 | Best Val: 0.6671 (epoch 6) | Duration: 228.1s
+Epoch [11/25] | Train Loss: 0.3572 | Val Acc: 0.6550 | Val F1: 0.6517 | Best Val: 0.6671 (epoch 6) | Duration: 230.2s
+Epoch [12/25] | Train Loss: 0.3048 | Val Acc: 0.6404 | Val F1: 0.6824 | Best Val: 0.6671 (epoch 6) | Duration: 231.2s
+Epoch [13/25] | Train Loss: 0.2797 | Val Acc: 0.6065 | Val F1: 0.6600 | Best Val: 0.6671 (epoch 6) | Duration: 231.1s
+Epoch [14/25] | Train Loss: 0.2469 | Val Acc: 0.6465 | Val F1: 0.6641 | Best Val: 0.6671 (epoch 6) | Duration: 228.8s
+Epoch [15/25] | Train Loss: 0.2159 | Val Acc: 0.6683 | Val F1: 0.6841 | Best Val: 0.6683 (epoch 15) | Duration: 227.7s  <-- improved
+Epoch [16/25] | Train Loss: 0.2050 | Val Acc: 0.6283 | Val F1: 0.6480 | Best Val: 0.6683 (epoch 15) | Duration: 229.0s
+Epoch [17/25] | Train Loss: 0.1959 | Val Acc: 0.6513 | Val F1: 0.6517 | Best Val: 0.6683 (epoch 15) | Duration: 229.3s
+Epoch [18/25] | Train Loss: 0.1703 | Val Acc: 0.6102 | Val F1: 0.6344 | Best Val: 0.6683 (epoch 15) | Duration: 229.9s
+Epoch [19/25] | Train Loss: 0.1720 | Val Acc: 0.6271 | Val F1: 0.6770 | Best Val: 0.6683 (epoch 15) | Duration: 227.5s
+Epoch [20/25] | Train Loss: 0.1486 | Val Acc: 0.6453 | Val F1: 0.6604 | Best Val: 0.6683 (epoch 15) | Duration: 229.2s
+Epoch [21/25] | Train Loss: 0.1475 | Val Acc: 0.6344 | Val F1: 0.6630 | Best Val: 0.6683 (epoch 15) | Duration: 227.8s
+Epoch [22/25] | Train Loss: 0.1471 | Val Acc: 0.6574 | Val F1: 0.6703 | Best Val: 0.6683 (epoch 15) | Duration: 228.4s
+Epoch [23/25] | Train Loss: 0.1388 | Val Acc: 0.6368 | Val F1: 0.6564 | Best Val: 0.6683 (epoch 15) | Duration: 230.0s
+Epoch [24/25] | Train Loss: 0.1197 | Val Acc: 0.6392 | Val F1: 0.6680 | Best Val: 0.6683 (epoch 15) | Duration: 228.9s
+Epoch [25/25] | Train Loss: 0.1307 | Val Acc: 0.6525 | Val F1: 0.6759 | Best Val: 0.6683 (epoch 15) | Duration: 228.1s
+============================================================================================================================================
+2025-12-04T19:46:23.925564 - Final Test Accuracy: 0.6763, Test F1_macro: 0.6815
+Final model saved as Results\b0\final_model.pth
+End Time: 2025-12-04T19:46:24.083425
+============================================================================================================================================

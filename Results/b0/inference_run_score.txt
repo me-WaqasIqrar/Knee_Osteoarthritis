@@ -1,0 +1,7 @@
+Inference run results
+Timestamp: 2025-12-04T20:55:59.590742
+Model path: D:\Repos\Knee_Osteoarthritis\Results\b0\best_model.pth
+Dataset (test folder): D:\Repos\Knee_Osteoarthritis\Dataset\test
+Num samples: 1656
+Accuracy: 0.679348
+F1_macro: 0.692243

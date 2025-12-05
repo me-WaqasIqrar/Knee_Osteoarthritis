@@ -7,7 +7,6 @@ from tqdm import tqdm
 import datetime
 from torch.optim import AdamW
 import numpy as np
-
 # try sklearn f1_score
 try:
     from sklearn.metrics import f1_score
@@ -139,14 +138,17 @@ def evaluate(model, dataloader, device):
     return acc, f1
 
 
-def main(data_root=r"./Dataset", num_epochs=25, batch_size=4, lr=5e-5, num_workers=4, exp_no="2"):
+def main(data_root=r"./Dataset", num_epochs=25, batch_size=4, lr=5e-5, num_workers=4, model_id="b1"):
     
-    import numpy as np
+ 
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+    print(f"Using device: {device}")
+    feature_extractor = SegformerImageProcessor.from_pretrained(f"nvidia/mit-{model_id}")
+    model = SegformerForImageClassification.from_pretrained( f"nvidia/mit-{model_id}", num_labels=5, ignore_mismatched_sizes=True).to(device)
+
 
     # create timestamped run folder for logs and model
-    run_time = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-    run_dir = os.path.join("logs", exp_no)
+    run_dir = os.path.join("Results", model_id)
     os.makedirs(run_dir, exist_ok=True)
     log_file = os.path.join(run_dir, "training_log.txt")
 
@@ -162,7 +164,7 @@ def main(data_root=r"./Dataset", num_epochs=25, batch_size=4, lr=5e-5, num_worke
         f.write("=" * 140 + "\n")
 
     # Initialize processor
-    feature_extractor = SegformerImageProcessor.from_pretrained("nvidia/mit-b5")
+   
 
     # Get dataloaders
     train_loader, val_loader, test_loader = get_dataloaders(data_root, feature_extractor, batch_size, num_workers=num_workers)
@@ -175,9 +177,7 @@ def main(data_root=r"./Dataset", num_epochs=25, batch_size=4, lr=5e-5, num_worke
         f.write("-" * 140 + "\n")
 
     # Load model
-    model = SegformerForImageClassification.from_pretrained(
-        "nvidia/mit-b5", num_labels=5, ignore_mismatched_sizes=True).to(device)
-
+    
     optimizer = AdamW(model.parameters(), lr=lr)
 
     # trackers for best model (based on val_acc)
@@ -250,5 +250,11 @@ def main(data_root=r"./Dataset", num_epochs=25, batch_size=4, lr=5e-5, num_worke
     print(f"Run directory: {os.path.abspath(run_dir)}")
 
 
-if __name__ == "__main__":
-    main()
+if __name__ == "__main__": 
+    data_root=r"Dataset/"
+    num_epochs=25
+    batch_size=4
+    lr=5e-5
+    num_workers=4
+    model_id="b5"
+    main(data_root=data_root, num_epochs=num_epochs, batch_size=batch_size, lr=lr, num_workers=num_workers, model_id=model_id)

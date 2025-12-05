@@ -150,10 +150,11 @@ def infer_examples(model, dataset, device, n_samples=10):
 
 
 def main():
-    # === MODIFY THESE PATHS AND SETTINGS ===
-    data_root = r"D:/Knee_Osteoarthritis/Dataset"      # dataset root (contains train/val/test)
-    model_path = r"logs/2/best_model.pth"  # path to saved model
-    backbone = "nvidia/mit-b5"
+    
+    data_root = r"Dataset"      # dataset root (contains train/val/test)
+    model_id="b5"
+    model_path = rf"Results/{model_id}/best_model.pth"  # path to saved model
+    backbone = f"nvidia/mit-{model_id}"
     num_labels = 5
     batch_size = 16
     num_workers = 4

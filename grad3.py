@@ -7,18 +7,19 @@ from PIL import Image
 import matplotlib.pyplot as plt
 from transformers import SegformerForImageClassification, SegformerImageProcessor, SegformerConfig
 
-# ----------------------------- USER CONFIG -----------------------------
-CHECKPOINT_PATH = r"D:/Knee_Osteoarthritis/logs/1/final_model.pth"
-path=r"D:/Knee_Osteoarthritis/Dataset/test"
+##
+
+CHECKPOINT_PATH = r"logs/1/final_model.pth"
+PATH=r"Dataset/test"
 IMG_PATH = None #r"D:/Knee_Osteoarthritis/Dataset/test/2/9797850R.png"
 HF_BACKBONE = "nvidia/mit-b0"
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
-RESULT_SAVE_PATH = r"D:/Knee_Osteoarthritis/B0_Inference"
+RESULT_SAVE_PATH = r"B0_Inference"
 OUT_SAVE = True
 OVERLAY_ALPHA = 0.45
 OUT_FILENAME = None
-USE_WEIGHTED_LAYERS = True  # weight deeper layers stronger when averaging
-USE_GRADCAM_FALLBACK = True  # try Grad-CAM if attentions aren't usable
+USE_WEIGHTED_LAYERS = True 
+USE_GRADCAM_FALLBACK = True 
 # -----------------------------------------------------------------------
 
 def create_images_path_list(path):
@@ -330,7 +331,7 @@ def main_inference(model, processor, IMG_PATH, save_dir,label):
 if __name__ == '__main__':
     model = load_model_from_checkpoint(CHECKPOINT_PATH, HF_BACKBONE, DEVICE)
     processor = SegformerImageProcessor.from_pretrained(HF_BACKBONE)
-    images_path, label, save_dir = create_images_path_list(path)
+    images_path, label, save_dir = create_images_path_list(PATH)
     
     for i, img_path in enumerate(images_path):
         

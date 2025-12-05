@@ -1,3 +1,7 @@
 Dataset/Knee Osteoarthritis Dataset.zip
 logs/2/best_model.pth
 logs/2/final_model.pth
+Results/b0/best_model.pth
+Results/b0/final_model.pth
+Results/b5/best_model.pth
+Results/b5/final_model.pth

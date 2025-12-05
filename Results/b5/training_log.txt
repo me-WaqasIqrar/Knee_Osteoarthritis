@@ -1,0 +1,41 @@
+SegFormer Image Classification Training Log
+Start Time: 2025-12-04T20:58:58.102807
+Dataset: Dataset/
+Epochs: 25, Batch Size: 4, Learning Rate: 5e-05, Num Workers: 4
+============================================================================================================================================
+Timestamp, Epoch, Train Loss, Val Acc, Val F1_macro, Best Val Acc, Best Epoch, Duration_s
+============================================================================================================================================
+Train samples: 5778
+Val   samples: 826
+Test  samples: 1656
+--------------------------------------------------------------------------------------------------------------------------------------------
+Epoch [1/25] | Train Loss: 1.1618 | Val Acc: 0.6489 | Val F1: 0.5849 | Best Val: 0.6489 (epoch 1) | Duration: 852.7s  <-- improved
+Epoch [2/25] | Train Loss: 0.7699 | Val Acc: 0.6622 | Val F1: 0.6552 | Best Val: 0.6622 (epoch 2) | Duration: 844.7s  <-- improved
+Epoch [3/25] | Train Loss: 0.6416 | Val Acc: 0.6683 | Val F1: 0.6581 | Best Val: 0.6683 (epoch 3) | Duration: 828.5s  <-- improved
+Epoch [4/25] | Train Loss: 0.5339 | Val Acc: 0.6525 | Val F1: 0.6641 | Best Val: 0.6683 (epoch 3) | Duration: 832.0s
+Epoch [5/25] | Train Loss: 0.4217 | Val Acc: 0.6659 | Val F1: 0.6486 | Best Val: 0.6683 (epoch 3) | Duration: 836.2s
+Epoch [6/25] | Train Loss: 0.3252 | Val Acc: 0.6501 | Val F1: 0.6458 | Best Val: 0.6683 (epoch 3) | Duration: 832.6s
+Epoch [7/25] | Train Loss: 0.2325 | Val Acc: 0.6380 | Val F1: 0.6644 | Best Val: 0.6683 (epoch 3) | Duration: 830.9s
+Epoch [8/25] | Train Loss: 0.2001 | Val Acc: 0.6889 | Val F1: 0.7172 | Best Val: 0.6889 (epoch 8) | Duration: 833.8s  <-- improved
+Epoch [9/25] | Train Loss: 0.1508 | Val Acc: 0.6562 | Val F1: 0.6923 | Best Val: 0.6889 (epoch 8) | Duration: 836.0s
+Epoch [10/25] | Train Loss: 0.1282 | Val Acc: 0.6610 | Val F1: 0.6718 | Best Val: 0.6889 (epoch 8) | Duration: 832.2s
+Epoch [11/25] | Train Loss: 0.1194 | Val Acc: 0.6356 | Val F1: 0.6604 | Best Val: 0.6889 (epoch 8) | Duration: 836.0s
+Epoch [12/25] | Train Loss: 0.1004 | Val Acc: 0.6320 | Val F1: 0.6346 | Best Val: 0.6889 (epoch 8) | Duration: 829.9s
+Epoch [13/25] | Train Loss: 0.0921 | Val Acc: 0.6501 | Val F1: 0.6717 | Best Val: 0.6889 (epoch 8) | Duration: 832.9s
+Epoch [14/25] | Train Loss: 0.0858 | Val Acc: 0.6634 | Val F1: 0.6929 | Best Val: 0.6889 (epoch 8) | Duration: 834.2s
+Epoch [15/25] | Train Loss: 0.0788 | Val Acc: 0.6308 | Val F1: 0.6594 | Best Val: 0.6889 (epoch 8) | Duration: 831.8s
+Epoch [16/25] | Train Loss: 0.0713 | Val Acc: 0.6453 | Val F1: 0.6759 | Best Val: 0.6889 (epoch 8) | Duration: 836.4s
+Epoch [17/25] | Train Loss: 0.0835 | Val Acc: 0.6247 | Val F1: 0.5742 | Best Val: 0.6889 (epoch 8) | Duration: 827.2s
+Epoch [18/25] | Train Loss: 0.0513 | Val Acc: 0.6586 | Val F1: 0.6953 | Best Val: 0.6889 (epoch 8) | Duration: 829.5s
+Epoch [19/25] | Train Loss: 0.0655 | Val Acc: 0.6574 | Val F1: 0.6686 | Best Val: 0.6889 (epoch 8) | Duration: 832.1s
+Epoch [20/25] | Train Loss: 0.0597 | Val Acc: 0.6792 | Val F1: 0.7038 | Best Val: 0.6889 (epoch 8) | Duration: 832.5s
+Epoch [21/25] | Train Loss: 0.0632 | Val Acc: 0.6465 | Val F1: 0.6774 | Best Val: 0.6889 (epoch 8) | Duration: 829.6s
+Epoch [22/25] | Train Loss: 0.0540 | Val Acc: 0.6707 | Val F1: 0.6982 | Best Val: 0.6889 (epoch 8) | Duration: 830.7s
+Epoch [23/25] | Train Loss: 0.0456 | Val Acc: 0.6320 | Val F1: 0.6633 | Best Val: 0.6889 (epoch 8) | Duration: 831.8s
+Epoch [24/25] | Train Loss: 0.0556 | Val Acc: 0.6477 | Val F1: 0.5983 | Best Val: 0.6889 (epoch 8) | Duration: 831.4s
+Epoch [25/25] | Train Loss: 0.0435 | Val Acc: 0.6465 | Val F1: 0.6652 | Best Val: 0.6889 (epoch 8) | Duration: 828.7s
+============================================================================================================================================
+2025-12-05T02:47:53.294449 - Final Test Accuracy: 0.6926, Test F1_macro: 0.7204
+Final model saved as Results\b5\final_model.pth
+End Time: 2025-12-05T02:47:55.267392
+============================================================================================================================================
